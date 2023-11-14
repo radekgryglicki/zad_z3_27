@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta charset="UTF-8">
+
+<script language="JavaScript">
+
+function kat(d,x)
+{
+d_gry = parseFloat(d)
+x_gry = parseFloat(x)
+
+tg_alfa=d_gry/x_gry;
+radianty= Math.atan(tg_alfa);
+stopnie = (radianty * 180)/Math.PI;
+document.getElementsByName('dlugoscx')[0].value=stopnie.toFixed(2);
+}
+
+function drabina(d,x)
+{
+d_gry = parseFloat(d)
+x_gry = parseFloat(x)
+
+wynik_x = d_gry * d_gry + x_gry * x_gry;
+wynik = Math.sqrt(wynik_x);
+document.getElementsByName('dlugoscd')[0].value = wynik.toFixed(2);
+}
+
+</script>
+</head>
+<body>
+<h1>Obliczanie odleglosci od drabiny i kąta</h1><br><br>
+<form name ="form" action ="..." onsubmit = "drabina(this.dd_gry.value,this.xx_gry.value); kat(this.dd_gry.value, this.xx_gry.value); return false">
+Podaj d: <input name ="dd_gry">
+Podaj x: <input name ="xx_gry"> <br><br><br>
+
+<input type="submit" value="oblicz"> <br><br<br>
+
+Drabina = <input name = "dlugoscd">
+
+Alfa = <input name = "dlugoscx">
+
+</form>
+</body>
+</html>
+

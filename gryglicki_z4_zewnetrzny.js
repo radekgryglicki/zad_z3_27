@@ -1,0 +1,1 @@
+document.write("Szkielet zaliczeniowy JavaScript Radek Gryglicki klasa 2P".fontcolor("red") .bold().fontsize(5)+"<br>");

@@ -1,0 +1,57 @@
+<html<html>
+<head>
+<title> Gryglicki 2P</title>
+<script language="JavaScript">
+function WinOpen_g1_gryglicki()
+{
+window.open("grafika_1.html","grafika1","toolbar=no,directories=no,menubar=no,height=380,width=160,");
+}
+
+function WinOpen_g2_gryglicki()
+{
+window.open("grafika_2.html","grafika2","toolbar=no,directories=no,menubar=no,height=380,width=160,left=170");
+}
+
+function WinOpen_g3_gryglicki()
+{
+window.open("grafika_3.html","grafika3","toolbar=no,directories=no,menubar=no,height=380,width=160,left=340");
+}
+function okno_zamknij_gryglicki()
+{
+window.close()
+}
+function WinOpen_g4_gryglicki()
+{
+window.open("grafika_4.html","grafika4","toolbar=no,directories=no,menubar=no,height=380,width=160,left=510");
+}
+
+document.write("Wykonał: Radek Gryglicki mój numer w dzienniku 12, czyli <br> mam układ [(12) mod 4=3] układ4 " .fontcolor("red").bold().fontsize(6)+"<br>");
+</script>
+</head>
+<body>
+<SCRIPT type="text/javascript" src="gryglicki_zewnetrzny2.js"></SCRIPT>
+<form>
+<center><br><br>
+<input type="button" name="grafika1" 
+value="grafika1" onclick="WinOpen_g1_gryglicki(' ')">
+
+<input type="button" name="grafika2" 
+value="grafika2" onclick="WinOpen_g2_gryglicki(' ')">
+
+<input type="button" name="grafika3" 
+value="grafika3" onclick="WinOpen_g3_gryglicki(' ')">
+
+<input type="button"  name="grafika4" 
+value="grafika4" onclick="WinOpen_g4_gryglicki(' ')">
+
+
+<input type="button" value="zamknij okno" 
+onclick="okno_zamknij_gryglicki()"/>
+</center>
+</form>
+
+
+ 
+ 
+</body>
+</html>

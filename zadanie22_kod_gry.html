@@ -1,0 +1,41 @@
+<html>
+<head>
+</head>
+<body>
+<textarea rows="50" cols="90">
+
+    <html>
+        <head>
+        <meta charset="UTF-8">
+        </head>
+        <body>
+        
+        <script type="text/javascript">
+        function pole()
+        {
+        var a_gry= parseFloat(document.getElementById('dlugosc1').value);
+        var b_gry= parseFloat(document.getElementById('dlugosc2').value);;
+        var pole = a_gry * b_gry;
+        document.getElementById("nazwa").innerHTML ="Pole prostokąta= "+pole.toFixed(2)+" cm^2";
+        }
+        function obwod()
+        {
+        var a_gry= parseFloat(document.getElementById('dlugosc1').value);
+        var b_gry= parseFloat(document.getElementById('dlugosc2').value);
+        var obwod = 2*a_gry+2*b_gry;
+        document.getElementById("nazwa").innerHTML ="Obwód prostokąta= "+obwod.toFixed(2)+" cm";
+        }
+        </script>
+        
+        <h1>Wszystko o Prostokącie</h1><br><br>
+        Podaj długość dłuższego boku: <input type="text" id="dlugosc1" value="podaj długość"> cm<br><br><br>
+        Podaj długość krótszego boku: <input type="text" id="dlugosc2" value="podaj długość"> cm<br><br><br>
+        <input type="button" name="pole" value="Oblicz pole" Onclick="pole()"><br><br>
+        <input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod()"><br><br>
+        <div style="color:red;font-size:50px;"id="nazwa"></div>
+        </body>
+        </html>
+
+</textarea>
+</body>
+</html>

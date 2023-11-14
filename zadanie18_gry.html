@@ -1,0 +1,40 @@
+<html>
+<head>
+<title> Użycie fukcji </title>
+<meta charset="utf-8">
+</head>
+<body>
+<div style="color:navy;font-size:50px;">
+<script language="JavaScript">
+
+var a=parseFloat(prompt("a=",""));
+var b=parseFloat(prompt("b=",""));
+function suma_gry(a, b) 
+{
+return a + b;
+}
+
+function roznica_gry(a, b) 
+{
+return a - b;
+}
+
+function iloczyn_gry(a, b) 
+{
+return a * b;
+}
+
+function iloraz_gry(a, b) 
+{
+return a / b;
+}
+
+document.write("Wczytane liczby to:"+"a="+a+"&nbsp;&nbsp;"+"b="+b+"<br>");
+document.write("suma="+suma_gry(a,b)+"<br>");
+document.write("roznica="+roznica_gry(a,b)+"<br>");
+document.write("iloczyn="+iloczyn_gry(a,b)+"<br>");
+document.write("iloraz="+iloraz_gry(a,b)+"<br>");
+</script>
+</div>
+</body>
+</html>

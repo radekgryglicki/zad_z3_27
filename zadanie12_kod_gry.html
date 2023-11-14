@@ -1,0 +1,50 @@
+<html>
+<head>
+</head>
+<body>
+<textarea rows="40" cols="60">
+
+    <HTML> 
+        <HEAD>  
+        </HEAD> 
+        <BODY>  
+        <div style = "color: green; font-size: 42px;">
+        <script language="JavaScript">
+        var D1_gry=prompt("Pierwszy dzień=","");
+        var G1_gry=prompt("Pierwsza godzina=","");
+        var D2_gry=prompt("Drugi dzień=","");
+        var G2_gry=prompt("Drug godzina=","");
+        
+        var wynikdni;
+        var wynikgodzin;
+        var wynik;
+        
+        var a=parseFloat(D1_gry);
+        var b=parseFloat(D2_gry);
+        var c=parseFloat(G1_gry);
+        var d=parseFloat(G2_gry);
+        
+        wynikdni = (a-b)*86400;
+        
+        wynikgodzin = (c-d)*3600;
+        
+        if(wynikgodzin < 0)
+        {
+        wynikgodzin = wynikgodzin * -1;
+        }
+        
+        wynik = wynikdni - wynikgodzin;
+        
+        document.write("D1="+a+ "<br>");
+        document.write("G1="+c+ "<br>");
+        document.write("D2="+b+ "<br>");
+        document.write("G2="+d+ "<br>");
+        document.write("Ilość sekund ="+wynik+ "<br>");
+        </script>
+        </div>
+        </BODY> 
+        </HTML>
+
+</textarea>    
+</body>
+</html>

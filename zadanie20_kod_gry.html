@@ -1,0 +1,60 @@
+<html>
+<head>
+</head>
+<body>
+<textarea rows="50" cols="90">
+
+    <html>
+        <head>
+        <meta charset="UTF-8">
+        </head>
+        <body>
+        
+        <script type="text/javascript">
+        function AB_gry()
+        {
+        var xa_gry= parseFloat(document.getElementById('xa_dana').value);
+        var ya_gry= parseFloat(document.getElementById('ya_dana').value);
+        var yb_gry= parseFloat(document.getElementById('yb_dana').value);
+        var xb_gry= parseFloat(document.getElementById('xb_dana').value);
+        var dlugosc_AB = Math.sqrt(Math.pow(xa_gry * xb_gry) + Math.pow(ya_gry * yb_gry));
+        }
+        
+        function BC_gry()
+        {
+        var xc_gry= parseFloat(document.getElementById('xc_dana').value);
+        var yc_gry= parseFloat(document.getElementById('yc_dana').value);
+        var yb_gry= parseFloat(document.getElementById('yb_dana').value);
+        var xb_gry= parseFloat(document.getElementById('xb_dana').value);
+        var dlugosc_AB = Math.sqrt(Math.pow(xb_gry * xc_gry) + Math.pow(yc_gry * yb_gry));
+        }
+        
+        function AC_gry()
+        {
+        var xc_gry= parseFloat(document.getElementById('xc_dana').value);
+        var yc_gry= parseFloat(document.getElementById('yc_dana').value);
+        var ya_gry= parseFloat(document.getElementById('ya_dana').value);
+        var xa_gry= parseFloat(document.getElementById('xa_dana').value);
+        var dlugosc_AB = Math.sqrt(Math.pow(xa_gry * xc_gry) + Math.pow(ya_gry * yc_gry));
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        </script>
+        
+        <h1>Wszystko o KWADRACIE</h1><br><br>
+        Podaj długość boku: <input type="text" id="dlugosc" value="podaj długość"> cm<br><br><br>
+        <input type="button" name="pole" value="Oblicz pole" Onclick="pole()"><br><br>
+        <input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod()"><br><br>
+        <div style="color:red;font-size:50px;"id="nazwa"></div>
+        </body>
+        </html>
+
+</textarea>
+</body>
+</html>
